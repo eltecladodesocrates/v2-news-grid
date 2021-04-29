@@ -36,6 +36,11 @@ a {
     width: 100%;
     margin: 0.5rem 0;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .current {
@@ -115,7 +120,7 @@ a {
 /* Navbar */
 #header .navbar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     background-color: #fff;
 }
@@ -163,7 +168,7 @@ a {
     background: url('../img/featured.jpg') no-repeat center center/cover;
     height: 70vh;
     color: #fff;
-    z-index: 15;
+    z-index: 9;
 }
 
 .showcase:before {
@@ -245,6 +250,54 @@ a {
 .posts-section .box-container .box:nth-child(4),
 .posts-section .box-container .box:nth-child(5) {
     grid-row: 2 / span 2;
+}
+
+/* About Page */
+.about-section {
+    background-color: var(--light-color);
+}
+
+.about-section .about-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.about-section .about-container .about-text {
+    grid-column: 1 / span 3;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.about-section .about-container .about-text h3 {
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.about-section .about-container .about-text p {
+    margin: 1rem 0;
+}
+
+.about-section .about-container .club-info {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 200px;
+    padding: 1rem;
+}
+
+.about-section .about-container .club-info .btn {
+    background-color: var(--seondary-color);
+}
+
+.about-section .about-container .club-info h3 {
+    font-size: 1.5rem;
+}
+
+.about-section .about-container .club-info p {
+    margin: 0.5rem 0;
 }
 
 /* Footer */
